@@ -1,13 +1,306 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+/* Basic Styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Lora";
+  color: #212738;
+  background-color: #FAFFFD; 
+
+  /* #FAFFFD; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  height: 100vh; 
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 150px; 
+  position: relative; /* Set same as footer's height */
+}
+
+
+/* Navbar */
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2; 
+}
+
+.navbar-links {
+  margin-left: auto;
+  padding: 5px;   
+  font-size: 20px;  
+}
+
+.navbar-links a{
+  margin-right: 15px; 
+  text-decoration: none; 
+}
+
+.navbar-links a:hover {
+  text-decoration: underline; 
+}
+
+/* Home Container */
+
+.home {
+  max-width: 800px; 
+  margin: auto; 
+  padding-top: 25px;  
+  margin-bottom: 55px; 
+  position: relative; 
+}
+
+.home-image
+{
+  margin: 25px 0; 
+}
+
+.welcome-text
+{
+  text-align: center;
+  
+}
+
+.learn-list{
+  margin: 25px 0; 
+}
+
+/* Create Container */
+
+.create {
+  max-width: 800px; 
+  margin: auto; 
+  padding-top: 25px;  
+  height: 73vh; 
+}
+
+/* Articles Container */
+
+.articles {
+  max-width: 800px; 
+  margin: auto; 
+  padding-top: 25px;  
+}
+
+.article-list
+{
+  height: 100vh; 
+ 
+}
+
+.article-goals
+{
+  margin: 5vh 0; 
+}
+
+.articles-preview
+{
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+   
+}
+
+
+
+.vocab-grid
+{
+  display: flex; 
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5vh 0; 
+  justify-content: center;
+  gap: 20vh; 
+}
+
+.vocab-flex
+{
+  display: flex; 
+  gap: 15vh ;
+  justify-content: center;
+}
+
+.vocab
+{
+  
+  width: 100px; 
+  height: 60px;
+  
+}
+
+/* Lessons Container */
+
+.lessons-container {
+  max-width: 800px; 
+  margin: auto; 
+  padding-top: 25px;  
+}
+
+.lesson-title {
+  margin-bottom: 25px; 
+}
+
+/* Error Container */
+
+.error {
+  max-width: 800px; 
+  margin: auto; 
+  padding-top: 25px;  
+}
+
+/* Quiz Container */
+
+.quiz{
+  height: 73vh; 
+}
+
+.quiz-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  width: 1000px;
+} 
+
+.quizzes {
+  max-width: 800px; 
+  margin: auto; 
+  padding-top: 25px; 
+}
+
+.quiz-preview {
+  margin: 25px 0; 
+}
+
+
+.quiz-list {
+  display: inline-flex; 
+  max-width: 500px;
+  align-items: center; 
+}
+
+.quiz {
+  max-width: 800px; 
+  margin: auto; 
+  padding-top: 25px;  
+}
+
+.quiz button {
+  display: block; 
+  margin: auto; 
+  margin-top: 15px; 
+  padding: 10px; 
+  width: 100px;
+  font-size: 18px; 
+  background-color: #FAFFFD;
+  transition: 0.3s; 
+  border: solid 1px #212738; 
+}
+
+.quiz button:hover{
+  background-color: #212738;
+  border: #FAFFFD 1px solid; 
+  color: #FAFFFD;
+  cursor: pointer; 
+}
+
+.quiz-test-word {
+  font-size: 32px; 
+  font-weight: bold ;
+  text-align: center; 
+  display: block; 
+}
+
+.radio-options-div {
+  margin-top: 25px;
+  display: inline-block; 
+}
+
+.radio-options {
+  display: block; 
+}
+
+.radio-options-flex {
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  gap: 25px; 
+}
+
+/* Create Page */
+
+.create h2 {
+  text-align: center; 
+  border-bottom: 1px solid black; 
+}
+
+.create label {
+  display: block; 
+  margin-top: 10px; 
+  font-size: 24px; 
+}
+
+.create button {
+  display: block; 
+  margin-top: 15px; 
+}
+
+/* New Quiz Modal */
+
+.input-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+  position: absolute; 
+  margin-top: 100vh; 
+  right: 0;  
+  left: 0; 
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  height: 14vh; 
+  max-width: 80%;
+  margin: 0 auto;
+  border-top: 1px solid #f2f2f2; 
+ 
 }
