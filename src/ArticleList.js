@@ -6,12 +6,12 @@ const ArticleList = ({ articles }) => {
             {articles.map(article => ( 
                 <div  key={article.id}>
                     <Link to={`/lessons/${article.id}`}>
-                        <div className="articles-preview">
-                            <div className="article-image-container">
-                                <img src={ article.image } style={{ height: 100, width: 150}} alt="article"></img>
+                        <div style={{backgroundColor: `${article.style}` }} className="articles-preview">
+                            <div style={{backgroundColor: `${article.style}` }} className="article-image-container">
+                                <img style={{backgroundColor: `${article.style}` }}className="article-icon" src={ article.icon }  alt="article"></img>
                             </div>
-                            <div className="article-title-container">
-                                <h2>{ article.title }</h2>
+                            <div style={{backgroundColor: `${article.style}` }} className="article-title-container">
+                                { article.title }
                             </div>
                         </div>
                         

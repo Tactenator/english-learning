@@ -5,20 +5,23 @@ const QuizList = ({ quiz }) => {
     console.log(quiz);
     
     return ( 
-        <div className="quiz-container">
-            {quiz.map(quizzes => ( 
-                <div className="quiz-preview" key={quiz.id}>
-                    <Link to={`/quiz/${quizzes.title}`}>
-                        <div className="quiz-list">
-                            <img src={ quizzes.image } style={{ height: 100, width: 150, marginRight: 25}}alt="quiz"></img>
-                            <div>
-                                <h2>{ quizzes.title }</h2>
-                            </div>
-                        </div> 
-                    </Link>
-                </div>
-            ))}
-        </div>
+        <div className="article-list">
+        {quiz.map(quizzes => ( 
+            <div key={quizzes.id}>
+                <Link to={`/quiz/${quizzes.title}`}>
+                    <div style={{backgroundColor: `${quizzes.style}` }} className="articles-preview">
+                        <div style={{backgroundColor: `${quizzes.style}` }} className="article-image-container">
+                            <img style={{backgroundColor: `${quizzes.style}` }}className="article-icon" src={ quizzes.icon }  alt="article"></img>
+                        </div>
+                        <div style={{backgroundColor: `${quizzes.style}` }} className="article-title-container">
+                            { quizzes.title }
+                        </div>
+                    </div>
+                    
+                </Link>
+            </div>
+        ))}
+    </div>
      );
 }
  

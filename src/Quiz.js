@@ -76,7 +76,13 @@ const Quiz = () => {
     }
 
     const handleChange = (e) => {
-        setSelected(e.target.value);
+        if(e.target.value !== selected)
+        {
+            setSelected(e.target.value);
+        }
+        else{
+            setSelected('');
+        }
     }
 
     return ( 
@@ -88,20 +94,20 @@ const Quiz = () => {
                 </div>
                 <div className="radio-options-div">
                     <div className="radio-options-flex">
-                        <input className="radio-options" onChange={handleChange} 
-                        name="options-group" type="radio" value={ options[0] } /> <span>{ options[0] }</span>
+                        <input className={selected === options[0] ? "radio-options selected" : "radio-options"} onClick={handleChange} 
+                        name="options-group" type="button" value={ options[0] } /> 
                     </div>
                     <div className="radio-options-flex">
-                        <input className="radio-options"  onChange={handleChange}
-                        name="options-group" type="radio" value={ options[1] } /> { options[1] }
+                        <input className={selected === options[1] ? "radio-options selected" : "radio-options"}  onClick={handleChange}
+                        name="options-group" type="button" value={ options[1] } /> 
                     </div>
                     <div className="radio-options-flex">
-                        <input className="radio-options" onChange={handleChange}
-                        name="options-group" type="radio" value={ options[2] } /> { options[2] }
+                        <input className={selected === options[2] ? "radio-options selected" : "radio-options"} onClick={handleChange}
+                        name="options-group" type="button" value={ options[2] } /> 
                     </div>
                     <div className="radio-options-flex">
-                        <input className="radio-options" onChange={handleChange} 
-                        name="options-group" type="radio" value={ options[3] } /> { options[3] }
+                        <input className={selected === options[3] ? "radio-options selected" : "radio-options"} onClick={handleChange} 
+                        name="options-group" type="button" value={ options[3] } /> 
                     </div>
                 </div>
                 <button onClick={ handleClick }>Submit</button>

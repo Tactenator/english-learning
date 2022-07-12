@@ -1267,56 +1267,77 @@
   "QuizList": [
     {
       "title": "Saludos y Despidas",
-      "image": "https://gsas.harvard.edu/sites/default/files/styles/twitter/public/thumbnails/image/hello-goodbye-cartoon.jpg?itok=GqIpYHhL",
+      "icon": "./img/saludos-quiz.png",
+      "style": "#419ce1",
       "id": 1
     },
     {
       "title": "En la Cocina",
+      "icon": "./img/cocina-quiz.png",
+      "style": "#f99453",
       "image": "https://www.seekpng.com/png/detail/66-669837_kitchenware-animation-cartoon-kitchen-cabinets-cartoon.png",
       "id": 2
     },
     {
       "title": "Dinero",
+      "icon": "./img/dinero-quiz.png",
+      "style": "#3ee4c4",
       "image": "https://media.istockphoto.com/vectors/money-illustration-big-stack-of-dollars-and-golden-coins-wealth-and-vector-id1279341226?k=20&m=1279341226&s=612x612&w=0&h=XU-lmE0VunZSHBXYBk5xBnNT78Bd-QMr4uRlTFD9UAA=",
       "id": 3
     },
     {
       "title": "Familia",
+      "icon": "./img/familia-quiz.png",
+      "style": "#1d9cb8",
       "image": "https://i.fbcd.co/products/resized/resized-750-500/a0c0510041c1e96c45791e0846e1b77829f6bcc6d2398e42e88d868dd5217aff.jpg",
       "id": 4
     },
     {
       "title": "Verbos Basicos",
+      "icon": "./img/verbos-quiz.png",
+      "style": "#ffd9a4",
       "image": "https://w7.pngwing.com/pngs/60/328/png-transparent-silhouette-jumping-jump-animals-hand-cartoon.png",
       "id": 5
     },
     {
       "title": "Días de la semana",
+      "icon": "./img/dias-quiz.png",
+      "style": "#c1e8f7",
       "image": "https://image.shutterstock.com/image-vector/weekday-names-set-text-colorful-260nw-714244117.jpg",
       "id": 6
     },
     {
       "title": "Los Meses",
+      "icon": "./img/meses-quiz.png",
+      "style": "#3cd7e7",
       "image": "https://image.shutterstock.com/image-vector/calendar-cartoon-vector-illustration-hand-260nw-357444302.jpg",
       "id": 7
     },
     {
       "title": "Colores",
+      "icon": "./img/colores-quiz.png",
+      "style": "#fee9e9",
       "image": "https://neilpatel.com/wp-content/uploads/2017/08/colors.jpg",
       "id": 8
     },
     {
       "title": "Partes de Cuerpo",
+      "icon": "./img/partes-quiz.png",
+      "style": "#beeafc",
       "image": "https://st4.depositphotos.com/9791856/23899/v/1600/depositphotos_238993944-stock-illustration-human-body-parts-different-parts.jpg",
       "id": 9
     },
     {
       "title": "Pronombres",
+      "icon": "./img/pronombres-quiz.png",
+      "style": "#d19871",
       "image": "https://image.shutterstock.com/image-vector/illustration-stickman-kids-speaking-pronouns-260nw-773123359.jpg",
       "id": 10
     },
     {
       "title": "Frases Común",
+      "icon": "./img/frases-quiz.png",
+      "style": "#586c7c",
       "image": "https://us.123rf.com/450wm/unitonevector/unitonevector1904/unitonevector190403157/123089259-man-woman-conversation-flat-vector-illustration-pretty-lady-having-discussion-with-handsome-boy-eleg.jpg?ver=6",
       "id": 11
     }
@@ -1325,6 +1346,8 @@
     {
       "id": "1",
       "title": "Saludados en ingles",
+      "icon": "./img/saludos.png",
+      "style": "#fcd5ce",
       "image": "https://www.scienceofpeople.com/wp-content/uploads/2014/09/1314878_HowtoMakeFriendsGuideImages1250x650V11_030322.jpg",
       "description": "Saludados y despedidas basicos en inglés",
       "vocab":
@@ -1389,6 +1412,8 @@
     {
       "id": "2",
       "title": "En La Cocina",
+      "icon": "./img/cooking.png",
+      "style": "#c1e8f7",
       "image": "https://cdnb.artstation.com/p/assets/images/images/038/816/979/large/ramon-rodrigues-3.jpg?1643065513",
       "description": "Palabras por cosas en la cocina",
       "vocab":
@@ -1449,6 +1474,8 @@
     {
       "id": "3",
       "title": "Familia",
+      "icon": "./img/family.png",
+      "style": "#D0F4DE",
       "image": "https://www.hollywoodreporter.com/wp-content/uploads/2019/05/thecasagrandes_press_03_copy.jpg",
       "description": "Palabras por la familia",
       "vocab":
@@ -1523,6 +1550,8 @@
     {
       "id": "4",
       "title": "Dinero",
+      "icon": "./img/money.png",
+      "style": "#ffd7ba",
       "image": "https://wallpaperaccess.com/full/1651747.jpg",
       "description": "Palabras para describir dinero",
       "vocab":
@@ -1572,6 +1601,8 @@
     {
       "id": "5",
       "title": "Dias, Meses, y anos",
+      "icon": "./img/calendar.png",
+      "style": "#fcd5ce",
       "image": "https://static.vecteezy.com/system/resources/previews/002/503/060/original/flat-simple-wall-calendar-design-style-cartoon-illustration-drawing-vector.jpg",
       "description": "El calendario",
       "vocab":
@@ -1696,6 +1727,8 @@
     {
       "id": "6",
       "title": "Verbos Basicos",
+      "icon": "./img/verbs.png",
+      "style": "#c1e8f7",
       "image": "https://previews.123rf.com/images/rms164/rms1641802/rms164180200020/95207560-%EC%A0%8A%EC%9D%80-%EC%8B%A4%ED%96%89-%EB%A7%8C%ED%99%94-%EC%96%B4%EB%A6%B0%EC%9D%B4%EC%9D%98-%EA%B7%B8%EB%A3%B9%EC%9E%85%EB%8B%88%EB%8B%A4-.jpg",
       "description": "Un introducion a los verbos basicos en ingles",
       "vocab":
@@ -1755,6 +1788,8 @@
     {
       "id": "7",
       "title": "Colores",
+      "icon": "./img/colors.png",
+      "style": "#D0F4DE",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Colouring_pencils.jpg/800px-Colouring_pencils.jpg",
       "description": "Los colores",
       "vocab":
@@ -1814,6 +1849,8 @@
     {
       "id": "8",
       "title": "Partes del Cuerpo",
+      "icon": "./img/anatomy.png",
+      "style": "#ffd7ba",
       "image": "https://i.pinimg.com/736x/33/ef/e9/33efe9d57ab057a3ab2771843d9c9cfa.jpg",
       "description": "Los partes del cuerpo",
       "vocab":
@@ -1863,6 +1900,8 @@
     {
       "id": "9",
       "title": "Pronombres",
+      "icon": "./img/pronouns.png",
+      "style": "#fcd5ce",
       "image": "https://image.shutterstock.com/image-vector/illustration-stickman-kids-speaking-pronouns-260nw-773123359.jpg",
       "description": "Las palabras para describir otras personas",
       "vocab":
@@ -1902,6 +1941,8 @@
     {
       "id": "10",
       "title": "Frases Común",
+      "icon": "./img/phrases.png",
+      "style": "#c1e8f7",
       "image": "https://cdn.boldomatic.com/content/post/giZlCA/Hello-how-are-you?size=800",
       "description": "Frases comun que puedes usar cada dia",
       "vocab":

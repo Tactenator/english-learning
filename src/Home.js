@@ -1,4 +1,4 @@
-import home from './img/home (2).jpg'
+import home from './home (2).jpg'
 
 const Home = () => {
     return ( 

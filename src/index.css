@@ -101,7 +101,13 @@ body::after {
 .article-list
 {
   height: 100vh; 
- 
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  text-decoration: none;
+}
+
+.article-list a{
+  text-decoration: none;
 }
 
 .article-goals
@@ -112,8 +118,35 @@ body::after {
 .articles-preview
 {
   display: flex; 
-  justify-content: space-between;
-  align-items: center;
+  align-items: center; 
+  height: 150px; 
+  border-radius: 15px; 
+  width: 90%; 
+  transition:.3s; 
+}
+
+.articles-preview:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2);  
+  opacity: 0.8;  
+  transform: translateY(-5px); 
+}
+
+.article-title-container
+{
+  margin-left: 10%; 
+  font-size: 18px; 
+  color: black; 
+  font-weight: bold;
+}
+
+.article-image-container
+{
+  margin-left: 5%; 
+}
+
+.article-icon
+{
+  border-radius: 50%; 
 }
 
 .vocab-grid
@@ -228,6 +261,24 @@ body::after {
 
 .radio-options {
   display: block; 
+  min-width: 20rem; 
+  padding: 15px; 
+  margin-bottom: 10px; 
+  font-size: 22px;
+  font-weight: bold;  
+  transition: 0.3s; 
+}
+
+.radio-options:hover{
+  cursor: pointer; 
+  color: white; 
+  background-color: black;
+}
+
+.selected
+{
+  background-color: black; 
+  color: white; 
 }
 
 .radio-options-flex {
