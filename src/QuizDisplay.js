@@ -1,5 +1,6 @@
 import useFetch from "./useFetch";
 import QuizList from './QuizList'
+import Exams from './exams.png';
 
 const Articles = () => {
 
@@ -7,7 +8,11 @@ const Articles = () => {
 
     return ( 
         <div className="quizzes">
-            <img style={{ marginLeft: 125 }}src="https://iesmartinezm.es/wp-content/uploads/2021/06/examen.jpg" alt="quizzes!"></img>
+            <div className="quiz-header-image-container">
+                <img className="quiz-header-image" src={Exams} alt="quizzes!"></img>
+                <h1>Examenes</h1>
+            </div>
+            
             <div>
                 { isPending && <div>Loading...</div> }
                 { error && <div>{ error }</div>}

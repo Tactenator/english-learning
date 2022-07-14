@@ -17,7 +17,6 @@ const QuizList = ({ quiz }) => {
                             { quizzes.title }
                         </div>
                     </div>
-                    
                 </Link>
             </div>
         ))}
